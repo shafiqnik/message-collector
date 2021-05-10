@@ -19,9 +19,9 @@ print('starting the script....'+timestamp)
 def writedb(message):
 
     #client = pymongo.MongoClient(
-     #   "mongodb+srv://mydmapiuser:mydmapiuserpassword@cluster0.aj4z4.mongodb.net/mydmapi?retryWrites=true&w=majority"
+     
     client = pymongo.MongoClient(
-        "mongodb+srv://contigo:<password>@cluster0.8qipc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+        "mongodb+srv://<username>:<password>@cluster0.8qipc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     db = client.test_database
     collection = db.test_collection
     post = {'message':message}
